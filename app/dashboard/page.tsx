@@ -1,3 +1,5 @@
+
+
 import Link from 'next/link';
 
 export default function Page() {
@@ -6,7 +8,7 @@ export default function Page() {
   return (
     <section className="cards-container">
       {photos.map((id) => (
-        <Link className="card" key={id} href={`/photos/${id}`} passHref>
+        <Link className="card" key={id} href={`/dashboard/photos/${id}`} passHref>
           {id}
         </Link>
       ))}
